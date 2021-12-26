@@ -1,0 +1,21 @@
+globals:
+  registry: ""
+
+services:
+  nginx:
+    name: nginx
+    image: nginx
+    containerVersion: latest
+    replicas: 1
+
+  prometheus:
+    name: prometheus
+    image: prom/prometheus
+    containerVersion: latest
+    replicas: 1
+
+  grafana:
+    name: grafana
+    image: grafana
+    containerVersion: latest
+    replicas: 1
